@@ -18,7 +18,7 @@ jobs:
       uses: bennymeg/youtube-playlists-action@v1
       with:
         channel-id: UCBadW1_E7CPAt9pxFWVnqkQ # UC3RGu86BjqnUToMvttPmhJA
-        token: ${{ secrets.YOUTUBE_API_TOKEN }}
+        api-key: ${{ secrets.YOUTUBE_API_TOKEN }}
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:

@@ -1,0 +1,23 @@
+name: youtube-playlist-indexer
+
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  playlist-indexer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Run youtube playlist indexer
+      uses: bennymeg/youtube-playlist-action
+      with:
+        channel-id: UCBadW1_E7CPAt9pxFWVnqkQ # UC3RGu86BjqnUToMvttPmhJA
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Updated toturials index

@@ -17,7 +17,7 @@ jobs:
     - name: Run youtube playlist indexer
       uses: bennymeg/youtube-playlists-action@v1
       with:
-        channel-id: UCBadW1_E7CPAt9pxFWVnqkQ # UC3RGu86BjqnUToMvttPmhJA
+        channel-id: UC3RGu86BjqnUToMvttPmhJA
         api-key: ${{ secrets.YOUTUBE_API_TOKEN }}
 
     - uses: stefanzweifel/git-auto-commit-action@v4

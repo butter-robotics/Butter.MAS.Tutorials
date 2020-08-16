@@ -1,11 +1,11 @@
-name: youtube-playlist-indexer
+name: youtube-playlists-indexer
 
 on:
   schedule:
   - cron: "0 0 * * *"
 
 jobs:
-  playlist-indexer:
+  youtube-playlists-indexer:
     runs-on: ubuntu-latest
 
     steps:

@@ -15,7 +15,7 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: Run youtube playlist indexer
-      uses: bennymeg/youtube-playlists-action
+      uses: bennymeg/youtube-playlists-action@v1
       with:
         channel-id: UCBadW1_E7CPAt9pxFWVnqkQ # UC3RGu86BjqnUToMvttPmhJA
 

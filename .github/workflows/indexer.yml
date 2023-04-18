@@ -28,7 +28,7 @@ jobs:
         api-key: ${{ secrets.YOUTUBE_API_TOKEN }}
         output-directory: docs/blender
         max-results: 30
-
+        
     - name: Commit playlists data
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
@@ -36,9 +36,9 @@ jobs:
         commit_user_name: Butter Bot
         commit_user_email: butter.robotics@gmail.com
         commit_author: bennymeg <bennymegk@gmail.com>
-
-      - name: Assert workflow active                        
-        uses: gautamkrishnar/keepalive-workflow@v1
-        with:
-          committer_username: Benny Bot
-          committer_email: butter.robotics@gmail.com
+        
+    - name: Assert workflow active
+      uses: gautamkrishnar/keepalive-workflow@v1
+      with:
+        committer_username: Benny Bot
+        committer_email: butter.robotics@gmail.com

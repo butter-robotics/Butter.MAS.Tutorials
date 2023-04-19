@@ -27,7 +27,7 @@ jobs:
         channel-id: UCSMOQeBJ2RAnuFungnQOxLg
         api-key: ${{ secrets.YOUTUBE_API_TOKEN }}
         output-directory: docs/blender
-        max-results: 30
+        max-results: 50
         
     - name: Commit playlists data
       uses: stefanzweifel/git-auto-commit-action@v4

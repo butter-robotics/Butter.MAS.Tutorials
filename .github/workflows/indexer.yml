@@ -37,8 +37,8 @@ jobs:
         commit_user_email: bennymegk@gmail.com
         commit_author: bennymeg <bennymegk@gmail.com>
         
-    - name: Assert workflow active
-      uses: gautamkrishnar/keepalive-workflow@v1
-      with:
-        committer_username: Butter Bot
-        committer_email: butter.robotics@gmail.com
+    # - name: Assert workflow active
+    #   uses: gautamkrishnar/keepalive-workflow@v1
+    #   with:
+    #     committer_username: Butter Bot
+    #     committer_email: butter.robotics@gmail.com
